@@ -1,42 +1,21 @@
 @import url("https://use.typekit.net/jmk3xov.css");
-
 a {
   color: white;
-  margin-right: 2%;
-  margin-left: 2%;
+  text-decoration: none;
 }
-
+.links:hover {
+  color: blue;
+}
 img {
-  width: 30%;
+  width: 20%;
   border-radius: 50%;
-  padding: 0;
+  padding: 10px;
   vertical-align: middle;
-}
-
-:root {
-  --dark-bg: rgba(15, 15, 15, 0.95);
-  --spacing: 10px;
-
-  font-family: brandon-grotesque, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 main {
   width: 100%;
-  color: white;
-  z-index: 99;
   position: absolute;
-  width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-h1 {
-  font-family: sans-serif;
-  font-style: normal;
-  text-align: center;
 }
 
 canvas {
@@ -45,30 +24,29 @@ canvas {
   left: 0;
 }
 
-header {
-  width: 80vw;
-  background: var(--dark-bg);
-  grid-column: 2;
-  font-size: 2.5rem;
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 5%;
 }
-
-section {
-  width: 100%;
-  height: auto;
-  grid-column: 2;
-  background: var(--dark-bg);
-  font-size: 1.25rem;
-  line-height: 1.5;
-  text-align: center;
+.flexbox-item {
+  width: 90%;
+  margin: 10px;
+  background-color: rgba(19, 19, 20, 0.9);
+  color: white;
 }
-.container {
-  width: fit-content;
-  height: auto;
-  /* background-color: #9FC; */
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  /* color: #039; */
+.flexbox-item-1 {
+  min-height: 200px;
+  flex-grow: 1;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+  flex-grow: 4;
+}
+.flexbox-item-3 {
+  min-height: 150px;
+  flex-grow: 1;
 }
